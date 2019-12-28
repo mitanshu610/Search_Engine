@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
       <style type="text/css">
-            #srch {
-                padding: 270px;
+            #srch{
+                padding: 290px;
             }
+            body, html{
+                height: 100%;
+            }
+          #srch_bar{
+
+           }
       </style>
 
     <!-- Required meta tags -->
@@ -17,11 +23,19 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="input-group mb-3" id="srch" style="background-image: url('static/SE1.jpg');background-size: cover;">
-    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-    <div class="input-group-append">
-        <button class="btn btn-warning" type="button" id="button-addon2">Search!</button>
-    </div>
+    <div class="input-group mb-3" id="srch" style="background-image: url('static/SE2.jpg');height: 100%;background-repeat: no-repeat;background-size: cover;background-position: center">
+
+
+    <form method="POST">
+        <input id="#srch_bar" formmethod="POST" type="text" name="text" class="form-control" placeholder="Type to Search..." aria-label="Type to Search..." aria-describedby="button-addon2" style="height: 50px;width: 850px;border-radius: 50px;font-size: 16px">
+        <br>
+        <div class="input-group-append">
+
+        <button class="btn btn-secondary" type="submit" id="button-addon2" style="height: 50px;margin: auto;width: 100px">Search!</button>
+        </div>
+    </form>
+
+
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
