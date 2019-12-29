@@ -10,8 +10,8 @@ def hello_world():
     return render_template('index.html')
 
 
-api_key = "AIzaSyBAIubVGkjrcUFeAG-bcYZhuUXCgj_bx00"
-cse_id = "015650286644973668229:h8ykdkmq6gu"
+api_key = "Enter your API key..."
+cse_id = "Custom Search Engine ID.."
 
 
 @app.route('/', methods=['POST'])
