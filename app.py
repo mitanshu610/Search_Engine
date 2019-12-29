@@ -19,7 +19,7 @@ def data_process():
     text = request.form['text']
     service = build("customsearch", "v1", developerKey=api_key)
     res = service.cse().list(q=text, cx=cse_id, num=10).execute()
-    print(res['url']['items']['snippet'])
+    print(res)
     return text
 
 if __name__ == '__main__':
